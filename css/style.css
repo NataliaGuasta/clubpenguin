@@ -351,11 +351,6 @@ display: none;
 
 /* MAIN NOSOTROS */
 
-
-.main-nosotros {
-  display: block;
-}
-
 .nosotros {font-family: "Raleway", sans-serif}
 .nosotros {
 color: black;
@@ -366,7 +361,7 @@ text-shadow: 0px 5px 15px black
 
 .parrafo-one {margin: 60px;}
 .parrafo-two {margin: 60px;}
-.parrafo-three {margin: 75px;}
+.parrafo-three {margin: 75px;} 
 
 main 
 section
@@ -374,19 +369,18 @@ section
            font-weight: 700;}
 
 .redes {
-width: 897px;
-height: 92px;
 display: flex;
-justify-content: center;
+justify-content: space-around;
 margin: 0 auto;
 }
-                
+
 .redes img {
-margin: 40px 100px;
-display: flex;
-justify-content: center;
-box-shadow: none;
+  margin: 15px; 
+  display: flex;
+  justify-content: center;
+  box-shadow: none;
 }
+
 
 
 main section img {
@@ -397,17 +391,16 @@ border-radius: 7px;
 box-shadow: 0 0 7px #222;
 }
 
-
-
 .fotos-p {
 display: flex;
 justify-content: center;
 border-radius: 7px;
 }
 
-.fotos-p img {width: 500px;
-        height: 250px;
-      margin: 50px;}
+.fotos-p img {
+width: 500px;
+height: 250px;
+margin: 50px;}
 
 
 
