@@ -54,42 +54,36 @@
             <p>Te invitamos a una cena romántica con tu pareja en nuestra sala privada.</p>
 
             <form action="form.php" method="post">
-                <div class="Nombre-s">
-                    <label for="nombre">Nombre</label>
-                    <input type="text" name="Nombre" id="nombre" placeholder="Nombre">
-                </div>
+                <div class="form-floating mb-3 Nombre-s">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="nombre">
+                    <label for="floatingInput">Nombre</label>
+                  </div>
+                  <div class="form-floating mb-3 Apellido-s">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="apellido">
+                    <label for="floatingInput">Apellido</label>
+                  </div>
 
-                <div class="Apellido-s">
-                    <label for="apellido">Apellido</label>
-                    <input type="text" name="Apellido" id="apellido" placeholder="Apellido">
-                </div>
+                    <div class="form-floating mb-3 Telefono-s">
+                        <input type="text" class="form-control" id="floatingInput" placeholder="telefono">
+                        <label for="floatingInput">Teléfono</label>
+                      </div>
 
-                <div class="Fecha-s">
-                    <label for="fecha">Fecha</label>
-                    <input type="date" name="Fecha" id="fecha" placeholder="Fecha">
-                </div>
-
-                <div class="Telefono-s">
-                    <label for="telefono">Teléfono</label>
-                    <input type="text" name="Teléfono" id="telefono" placeholder="011-12345678">
-                </div>
-
-                <div class="Cantidad-s">
-                    <label for="cantidad">Cantidad de Personas</label>
-                    <select name="cantidad" id="cantidad">
-                        <option value="2">2 Personas</option>
-                    </select>
+                      <div class="form-floating Cantidad-s">
+                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                          <option value="2">2</option>
+                        </select>
+                        <label for="floatingSelect">Cantidad de personas</label>
+                      </div>
                 </div>
                 
                 <div class="sala-items">
-                    <div class="sala-item-1">
-                        <input type="checkbox" name="aceptar_terminos" id="aceptar_terminos">
-                        <label for="aceptar_terminos">Acepto los términos y condiciones</label>
-                    </div>
-                    <div class="sala-item-2">
-                        <button type="button" class="btn btn-light">Reservar</button>
-                    </div>
+                  <div class="sala-item-1">
+                  <input type="checkbox" name="aceptar_terminos" id="aceptar_terminos">
+                  <label for="aceptar_terminos">Acepto los términos y condiciones</label>
                 </div>
+                  <div class="sala-item-2">
+                  <button type="button" class="btn btn-light">Reservar</button>
+                </div> 
             </form>
         </div>
     </section>
@@ -102,48 +96,44 @@
             <p>Reserva la sala privada para vos y hasta 9 amigos y de regalo les ofrecemos 5 consumiciones y un champagne.</p>
 
             <form action="form.php" method="post">
-                <div class="Nombre-s">
-                    <label for="nombre_amigos">Nombre</label>
-                    <input type="text" name="Nombre" id="nombre_amigos" placeholder="Nombre">
-                </div>
+                <div class="form-floating mb-3 Nombre-s">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="nombre">
+                    <label for="floatingInput">Nombre</label>
+                  </div>
+                  <div class="form-floating mb-3 Apellido-s">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="apellido">
+                    <label for="floatingInput">Apellido</label>
+                  </div>
 
-                <div class="Apellido-s">
-                    <label for="apellido_amigos">Apellido</label>
-                    <input type="text" name="Apellido" id="apellido_amigos" placeholder="Apellido">
-                </div>
+                    <div class="form-floating mb-3 Telefono-s">
+                        <input type="text" class="form-control" id="floatingInput" placeholder="telefono">
+                        <label for="floatingInput">Teléfono</label>
+                      </div>
 
-                <div class="Fecha-s">
-                    <label for="fecha_amigos">Fecha</label>
-                    <input type="date" name="Fecha" id="fecha_amigos" placeholder="Fecha">
-                </div>
-
-                <div class="Telefono-s">
-                    <label for="telefono_amigos">Teléfono</label>
-                    <input type="text" name="Teléfono" id="telefono_amigos" placeholder="011-12345678">
-                </div>
-
-                <div class="Cantidad-s"> 
-                    <label for="cantidad_amigos">Cantidad de Personas</label>
-                    <select name="cantidad_amigos" id="cantidad_amigos">
-                        <option value="3">3 Personas</option>
-                        <option value="4">4 Personas</option>
-                        <option value="5">5 Personas</option>
-                        <option value="6">6 Personas</option>
-                        <option value="7">7 Personas</option>
-                        <option value="8">8 Personas</option>
-                        <option value="9">9 Personas</option>
-                    </select>
+                      <div class="form-floating Cantidad-s">
+                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="6">6</option>
+                          <option value="7">7</option>
+                          <option value="8">8</option>
+                          <option value="9">9</option>
+                        </select>
+                        <label for="floatingSelect">Cantidad de personas</label>
+                      </div>
                 </div>
                 
                 <div class="sala-items">
-                    <div class="sala-item-1">
-                        <input type="checkbox" name="aceptar_terminos_amigos" id="aceptar_terminos_amigos">
-                        <label for="aceptar_terminos_amigos">Acepto los términos y condiciones</label>
-                    </div>
-                    <div class="sala-item-2">
-                        <button type="button" class="btn btn-light">Reservar</button>
-                    </div>
+                  <div class="sala-item-1">
+                  <input type="checkbox" name="aceptar_terminos" id="aceptar_terminos">
+                  <label for="aceptar_terminos">Acepto los términos y condiciones</label>
                 </div>
+                  <div class="sala-item-2">
+                  <button type="button" class="btn btn-light">Reservar</button>
+                </div> 
             </form>
         </div>
     </section>
@@ -155,46 +145,43 @@
             <h2 id="Familias">Sala Familia</h2>
             <p>Una sala donde vos y tu familia van a poder disfrutar de forma privada de nuestro parador. Ideal para ir con niños ya que cuenta con rompecabezas y más juegos de mesas para jugar en familia.</p>
 
+
             <form action="form.php" method="post">
-                <div class="Nombre-s">
-                    <label for="nombre_familia">Nombre</label>
-                    <input type="text" name="Nombre" id="nombre_familia" placeholder="Nombre">
+                <div class="form-floating mb-3 Nombre-s">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="nombre">
+                    <label for="floatingInput">Nombre</label>
+                  </div>
+                  <div class="form-floating mb-3 Apellido-s">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="apellido">
+                    <label for="floatingInput">Apellido</label>
+                  </div>
+
+                    <div class="form-floating mb-3 Telefono-s">
+                        <input type="text" class="form-control" id="floatingInput" placeholder="telefono">
+                        <label for="floatingInput">Teléfono</label>
+                      </div>
+
+                      <div class="form-floating Cantidad-s">
+                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="6">6</option>
+                        </select>
+                        <label for="floatingSelect">Cantidad de personas</label>
+                      </div>
                 </div>
-
-                <div class="Apellido-s">
-                    <label for="apellido_familia">Apellido</label>
-                    <input type="text" name="Apellido" id="apellido_familia" placeholder="Apellido">
-                </div>
-
-                <div class="Fecha-s">
-                    <label for="fecha_familia">Fecha</label>
-                    <input type="date" name="Fecha" id="fecha_familia" placeholder="Fecha">
-                </div>
-
-                <div class="Telefono-s">
-                    <label for="telefono_familia">Teléfono</label>
-                    <input type="text" name="Teléfono" id="telefono_familia" placeholder="011-12345678">
-                </div>
-
-                <div class="Cantidad-s">     
-                    <label for="cantidad_familia">Cantidad de Personas</label>
-                    <select name="cantidad_familia" id="cantidad_familia">
-                        <option value="3">3 Personas</option>
-                        <option value="4">4 Personas</option>
-                        <option value="5">5 Personas</option>
-                        <option value="6">6 Personas</option>
-                    </select>
-                </div>   
-
+                
                 <div class="sala-items">
-                    <div class="sala-item-1">
-                        <input type="checkbox" name="aceptar_terminos_familia" id="aceptar_terminos_familia">
-                        <label for="aceptar_terminos_familia">Acepto los términos y condiciones</label>
-                    </div>
-                    <div class="sala-item-2">
-                        <button type="button" class="btn btn-light">Reservar</button>
-                    </div>
+                  <div class="sala-item-1">
+                  <input type="checkbox" name="aceptar_terminos" id="aceptar_terminos">
+                  <label for="aceptar_terminos">Acepto los términos y condiciones</label>
                 </div>
+                  <div class="sala-item-2">
+                  <button type="button" class="btn btn-light">Reservar</button>
+                </div> 
             </form>
         </div>
     </section>
