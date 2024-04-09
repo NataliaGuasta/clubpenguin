@@ -215,7 +215,6 @@ display: none;
   border-radius: 5px;
   grid-column: 1/2;
   grid-row: 1/5;
-
 }
 
 .salas-container h2 {
@@ -248,12 +247,11 @@ display: none;
   margin-right: 15%;
 }
 
-
 .sala-items .sala-item-1,
 .sala-items .sala-item-2 {
- display: inline-block; 
- margin-bottom: 1%; 
- margin-left: 2%;
+  display: inline-block;
+  margin-bottom: 1%;
+  margin-left: 2%;
 }
 
 .Nombre-s,
@@ -601,18 +599,18 @@ margin: 50px;}
   display: block;
  }
 
-  .salas-container img,
   .img-salas {
     display: block;
-    margin: 4% auto;
+    margin: 4% auto !important;
   }
 
   .sala-items {
-    margin-bottom: 7%;
+    margin-bottom: 1% !important;
   }
 
   .salas-container p {
     margin: auto;
+    padding: auto;
   }
 
 }
