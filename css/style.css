@@ -242,6 +242,65 @@ header nav ul li a:hover {
   margin-left: 2%;
 }
 
+/* MAIN TURISMO */
+.turismo-conteiner .turismo {
+  background-color: rgb(192, 191, 191);
+  font-family: "Raleway", sans-serif;
+  border-radius: 7px;
+}
+.turismo-conteiner .turismo .img-turismo {
+  width: 100%;
+  margin-right: 2rem;
+  display: block;
+  margin: auto;
+}
+.turismo-conteiner .turismo .card-body .turismo-titulo {
+  color: rgb(23, 106, 202);
+  font-family: "Raleway", sans-serif;
+  text-shadow: 0px 4px 25px black;
+  font-size: 2rem;
+  text-align: center;
+}
+.turismo-conteiner .turismo .card-body .turismo p,
+.turismo-conteiner .turismo .card-body .horarios {
+  color: rgb(61, 87, 117);
+  text-align: center;
+  text-shadow: 0px 4px 27px black;
+}
+.turismo-conteiner .horarios:hover {
+  text-decoration: underline rgb(23, 106, 202);
+}
+
+.one-t:hover {
+  border: 2px solid rgb(23, 106, 202);
+}
+
+.two-t:hover {
+  border: 2px solid rgb(23, 106, 202);
+}
+
+.three-t:hover {
+  border: 2px solid rgb(23, 106, 202);
+}
+
+.video-yt {
+  width: 100%;
+  max-width: 560px;
+  margin: 0 auto;
+  box-shadow: 0 0 7px #222;
+  margin-bottom: 2rem;
+  margin-top: 3rem;
+  position: relative;
+  padding-bottom: 24.7%;
+}
+.video-yt iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 /* MAIN NOSOTROS */
 main .nosotros {
   font-family: "Raleway", sans-serif;
@@ -363,6 +422,27 @@ main .fotos-p img {
     justify-content: space-between;
   }
 }
+/* INICIO MEDIA-MOBILE*/
+@media only screen and (max-width: 500px) {
+  .inicio-container .imagen-responsive {
+    display: flex;
+    justify-content: center;
+    width: 700px auto;
+    height: 400px;
+    margin: 10px;
+    border-radius: 5px;
+  }
+  .inicio-container .carousel-container {
+    display: none;
+  }
+  .inicio-container .inicio-item-2 {
+    margin: 15px;
+  }
+  .inicio-container .mapa {
+    padding: 15px;
+    box-shadow: none;
+  }
+}
 /* SALAS MEDIA-MOBILE/TABLET */
 @media only screen and (min-width: 320px) and (max-width: 1000px) {
   .salas-container .sala-amigos,
@@ -399,26 +479,7 @@ main .fotos-p img {
   }
 }
 /*TABLET*/
-/* INICIO MEDIA-TABLET*/
-@media only screen and (max-width: 500px) {
-  .inicio-container .imagen-responsive {
-    display: flex;
-    justify-content: center;
-    width: 700px auto;
-    height: 400px;
-    margin: 10px;
-  }
-  .inicio-container .carousel-container {
-    display: none;
-  }
-  .inicio-container .inicio-item-2 {
-    margin: 15px;
-  }
-  .inicio-container .mapa {
-    padding: 15px;
-    box-shadow: none;
-  }
-}
+/*INICIO MEDIA-TABLET*/
 @media only screen and (min-width: 501px) and (max-width: 768px) {
   .inicio-container .inicio-item-2 {
     margin: 15px;
