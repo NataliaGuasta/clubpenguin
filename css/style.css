@@ -110,6 +110,53 @@ header nav ul li a:hover {
   box-shadow: 0 0 9px #222;
 }
 
+/*MAIN MENU*/
+.menu-container {
+  font-family: "Raleway", sans-serif;
+  text-shadow: 0px 5px 15px black;
+}
+.menu-container .title-food {
+  font-family: "Raleway", sans-serif;
+  font-size: 30px;
+  font-weight: 200;
+  color: black;
+  padding: 20px;
+  margin: 20px;
+  text-shadow: 0px 5px 20px black;
+}
+.menu-container .food-list .food-item {
+  display: flex;
+  background-color: rgb(147, 130, 121);
+  border-radius: 7px;
+  margin: 24px;
+  color: white;
+  font-size: 20px;
+  padding: -70px;
+  box-shadow: 0 6px 9px #222;
+  justify-content: center;
+}
+.menu-container .food-list .food-item img {
+  display: flex;
+  width: 160px;
+  height: 136px;
+  border-radius: 7px;
+  justify-content: center;
+  box-shadow: 0 0 7px #222;
+  margin: 1.5%;
+}
+.menu-container .food-list .food-item .descripcion {
+  font-style: italic;
+  justify-content: flex-start;
+  text-shadow: 0px 5px 15px black;
+}
+.menu-container .food-list .food-item .precio {
+  font-size: 29px;
+  padding: 30px;
+}
+.menu-container .food-list .food-item:hover {
+  border: 2.7px solid #5C3E3E;
+}
+
 /* MAIN SALAS */
 .salas-titulo {
   font-family: "Raleway", sans-serif;
@@ -351,29 +398,91 @@ main .fotos-p img {
     padding: 2%;
   }
 }
+/*TABLET*/
+/* INICIO MEDIA-TABLET*/
+@media only screen and (max-width: 500px) {
+  .inicio-container .imagen-responsive {
+    display: flex;
+    justify-content: center;
+    width: 700px auto;
+    height: 400px;
+    margin: 10px;
+  }
+  .inicio-container .carousel-container {
+    display: none;
+  }
+  .inicio-container .inicio-item-2 {
+    margin: 15px;
+  }
+  .inicio-container .mapa {
+    padding: 15px;
+    box-shadow: none;
+  }
+}
+@media only screen and (min-width: 501px) and (max-width: 768px) {
+  .inicio-container .inicio-item-2 {
+    margin: 15px;
+  }
+  .inicio-container .mapa {
+    padding: 15px;
+    box-shadow: none;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .inicio-item-2 {
+    margin: 15px;
+  }
+}
+/* TURIMOS MEDIA-TABLET*/
+@media only screen and (max-width: 768px) {
+  .video-yt {
+    width: 100%;
+    max-width: 560px;
+    margin: 0 auto;
+    box-shadow: 0 0 7px #222;
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+    position: relative;
+    padding-bottom: 56.25%;
+  }
+}
+/* NOSOTROS MEDIA-TABLET*/
+@media only screen and (max-width: 768px) {
+  .nosotros {
+    margin: auto;
+  }
+  .redes {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .fotos-p {
+    display: none;
+  }
+}
 /* MEDIA QUERY | DISEÑO RESPONSIVE*/
 /*DESKTOP*/
 /* HEADER MEDIA-DESKTOP/PC */
 @media only screen and (min-width: 1500px) and (max-width: 1899px) {
-  header img.logo-cp {
+  header img .logo-cp {
     margin-left: auto;
     margin-right: 10%;
   }
 }
 @media only screen and (min-width: 1900px) and (max-width: 2100px) {
-  header img.logo-cp {
+  header img .logo-cp {
     margin-left: auto;
     margin-right: 15%;
   }
 }
 @media only screen and (min-width: 2101px) and (max-width: 2509px) {
-  header img.logo-cp {
+  header img .logo-cp {
     margin-left: auto;
     margin-right: 20%;
   }
 }
 @media only screen and (min-width: 2510px) {
-  header img.logo-cp {
+  header img .logo-cp {
     margin-left: auto;
     margin-right: 24%;
   }

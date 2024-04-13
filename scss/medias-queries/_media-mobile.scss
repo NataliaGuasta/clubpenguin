@@ -3,7 +3,7 @@
 /*MOBILE*/
 
 /* HEADER MEDIA-MOBILE */
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1000px){
     header {
         display: flex;
         justify-content: space-between;
@@ -12,7 +12,7 @@
 
 /* SALAS MEDIA-MOBILE/TABLET */
 
-@media only screen and (min-width: 320px) and (max-width: 1000px) {
+@media only screen and (min-width: 320px) and (max-width: 1000px){
     .salas-container {
         .sala-amigos,
         .sala-familia,
@@ -43,7 +43,7 @@
            margin-right: 2.5%;
            margin-bottom: 1%;
            padding: 2%;
-           }
+        }
     }
     
 }

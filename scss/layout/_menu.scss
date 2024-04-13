@@ -1,0 +1,53 @@
+/*MAIN MENU*/
+.menu-container {
+    font-family: 'Raleway', sans-serif;
+    text-shadow: 0px 5px 15px black;
+
+    .title-food {
+        font-family: 'Raleway', sans-serif;
+        font-size: 30px;
+        font-weight: 200;
+        color: black;
+        padding: 20px;
+        margin: 20px;
+        text-shadow: 0px 5px 20px black  
+    }
+
+    .food-list {
+        .food-item {
+            display: flex;
+            background-color: rgb(147, 130, 121);
+            border-radius: 7px;
+            margin: 24px;
+            color: white;
+            font-size: 20px;
+            padding: -70px;
+            box-shadow: 0 6px 9px #222;
+            justify-content: center;
+
+            img {
+                display: flex;
+                width: 160px;
+                height: 136px;
+                border-radius: 7px;
+                justify-content: center;
+                box-shadow: 0 0 7px #222;
+                margin: 1.5%;
+            }
+            
+            .descripcion {
+                font-style: italic;
+                justify-content: flex-start;
+                text-shadow: 0px 5px 15px black 
+            }
+
+            .precio {
+                font-size: 29px;
+                padding: 30px;
+            }
+        }
+        .food-item:hover{
+            border: 2.7px solid #5C3E3E;
+        }
+    }
+}
