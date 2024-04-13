@@ -16,9 +16,10 @@
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
-
-    .inicio-item-2 {
-      margin: 15px;
+    .inicio-container{
+        .inicio-item-2 {
+            margin: 15px;
+        }
     }
 }
 
@@ -40,18 +41,20 @@
 
 /* NOSOTROS MEDIA-TABLET*/
 
-@media only screen and (max-width: 768px) {
-    .nosotros {
-      margin: auto;
-      }
+@media only screen and (max-width: 1024px) {
+    main {
+        .nosotros {
+            margin: auto;
+        }
     
-    .redes {
-    width: 100%; 
-    display: flex;
-    justify-content: center;
-    }
+        .redes {
+            width: 100%; 
+            display: flex;
+            justify-content: center;
+        }
     
-    .fotos-p {
-      display: none;
+        .fotos-p {
+            display: none;
+        }
     }
 }

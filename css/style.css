@@ -56,6 +56,7 @@ header nav ul li a:hover {
 }
 .inicio-container .imagen-responsive {
   display: none;
+  border-radius: 7px;
 }
 .inicio-container .carousel {
   width: 90%;
@@ -423,14 +424,13 @@ main .fotos-p img {
   }
 }
 /* INICIO MEDIA-MOBILE*/
-@media only screen and (max-width: 500px) {
+@media only screen and (min-width: 320px) and (max-width: 500px) {
   .inicio-container .imagen-responsive {
     display: flex;
     justify-content: center;
     width: 700px auto;
     height: 400px;
-    margin: 10px;
-    border-radius: 5px;
+    padding: 15px;
   }
   .inicio-container .carousel-container {
     display: none;
@@ -444,7 +444,7 @@ main .fotos-p img {
   }
 }
 /* SALAS MEDIA-MOBILE/TABLET */
-@media only screen and (min-width: 320px) and (max-width: 1000px) {
+@media only screen and (max-width: 1000px) {
   .salas-container .sala-amigos,
   .salas-container .sala-familia,
   .salas-container .sala-romance {
@@ -490,7 +490,7 @@ main .fotos-p img {
   }
 }
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
-  .inicio-item-2 {
+  .inicio-container .inicio-item-2 {
     margin: 15px;
   }
 }
@@ -508,16 +508,16 @@ main .fotos-p img {
   }
 }
 /* NOSOTROS MEDIA-TABLET*/
-@media only screen and (max-width: 768px) {
-  .nosotros {
+@media only screen and (max-width: 1024px) {
+  main .nosotros {
     margin: auto;
   }
-  .redes {
+  main .redes {
     width: 100%;
     display: flex;
     justify-content: center;
   }
-  .fotos-p {
+  main .fotos-p {
     display: none;
   }
 }
