@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Reset */
 * {
   margin: 0;
@@ -305,5 +306,87 @@ main .fotos-p img {
   width: 120px;
   height: 100px;
 }
+
+/* MEDIA QUERY | DISEÑO RESPONSIVE*/
+/*MOBILE*/
+/* HEADER MEDIA-MOBILE */
+@media only screen and (max-width: 1000px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+/* SALAS MEDIA-MOBILE/TABLET */
+@media only screen and (min-width: 320px) and (max-width: 1000px) {
+  .salas-container .sala-amigos,
+  .salas-container .sala-familia,
+  .salas-container .sala-romance {
+    display: block;
+    padding: 1.5%;
+  }
+  .salas-container .sala-amigos h2,
+  .salas-container .sala-familia h2,
+  .salas-container .sala-romance h2 {
+    padding: 0%;
+  }
+  .salas-container .sala-amigos p,
+  .salas-container .sala-familia p,
+  .salas-container .sala-romance p {
+    justify-content: center;
+    text-align: center;
+    padding: 0%;
+  }
+  .salas-container .sala-amigos .img-salas,
+  .salas-container .sala-familia .img-salas,
+  .salas-container .sala-romance .img-salas {
+    display: block;
+    margin: 3% auto;
+  }
+  .salas-container .sala-items {
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: right;
+    margin-right: 2.5%;
+    margin-bottom: 1%;
+    padding: 2%;
+  }
+}
+/* MEDIA QUERY | DISEÑO RESPONSIVE*/
+/*DESKTOP*/
+/* HEADER MEDIA-DESKTOP/PC */
+@media only screen and (min-width: 1500px) and (max-width: 1899px) {
+  header img.logo-cp {
+    margin-left: auto;
+    margin-right: 10%;
+  }
+}
+@media only screen and (min-width: 1900px) and (max-width: 2100px) {
+  header img.logo-cp {
+    margin-left: auto;
+    margin-right: 15%;
+  }
+}
+@media only screen and (min-width: 2101px) and (max-width: 2509px) {
+  header img.logo-cp {
+    margin-left: auto;
+    margin-right: 20%;
+  }
+}
+@media only screen and (min-width: 2510px) {
+  header img.logo-cp {
+    margin-left: auto;
+    margin-right: 24%;
+  }
+}
+/* SALAS MEDIA-DESKTOP/LAPTOP */
+@media only screen and (max-width: 1024px) {
+  .sala-items {
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: right;
+    margin-right: 2.5%;
+  }
+}
+/* SALAS MEDIA-DESKTOP/PC */
 
 /*# sourceMappingURL=style.css.map */

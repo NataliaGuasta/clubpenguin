@@ -1,0 +1,46 @@
+/* MEDIA QUERY | DISEÑO RESPONSIVE*/
+
+/*DESKTOP*/
+
+/* HEADER MEDIA-DESKTOP/PC */
+
+@media only screen and (min-width: 1500px) and (max-width: 1899px){
+    header img.logo-cp {
+      margin-left: auto; 
+      margin-right: 10%; 
+    }
+}
+    
+@media only screen and (min-width: 1900px) and (max-width: 2100px) {
+    header img.logo-cp {
+      margin-left: auto; 
+      margin-right: 15%; 
+    }
+}
+    
+@media only screen and (min-width: 2101px) and (max-width: 2509px) {
+    header img.logo-cp {
+      margin-left: auto; 
+      margin-right: 20%; 
+    }
+}
+    
+@media only screen and (min-width: 2510px) {
+      header img.logo-cp {
+        margin-left: auto; 
+        margin-right: 24%; 
+      } 
+}
+
+/* SALAS MEDIA-DESKTOP/LAPTOP */
+
+@media only screen and (max-width: 1024px) {
+    .sala-items {
+      flex-direction: column;
+      justify-content: flex-end;
+      text-align: right;
+      margin-right: 2.5%;
+    }
+}
+
+/* SALAS MEDIA-DESKTOP/PC */
