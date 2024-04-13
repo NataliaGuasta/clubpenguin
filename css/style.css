@@ -194,6 +194,54 @@ header nav ul li a:hover {
   margin-left: 2%;
 }
 
+/* MAIN NOSOTROS */
+main .nosotros {
+  font-family: "Raleway", sans-serif;
+  color: black;
+  font-size: 20px;
+  text-align: center;
+  text-shadow: 0px 5px 15px black;
+}
+main .nosotros .parrafo-one {
+  margin: 60px;
+}
+main .nosotros .parrafo-two {
+  margin: 60px;
+}
+main .nosotros .parrafo-two span {
+  color: #176ACA;
+  font-weight: 700;
+}
+main .nosotros .parrafo-three {
+  margin: 75px;
+}
+main .redes {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+main .redes img {
+  margin: 15px;
+  display: flex;
+  justify-content: center;
+  box-shadow: none;
+}
+main .fotos-p {
+  display: flex;
+  justify-content: center;
+  border-radius: 7px;
+}
+main .fotos-p img {
+  width: 500px;
+  height: 250px;
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+  margin: 40px;
+  border-radius: 7px;
+  box-shadow: 0 0 7px #222;
+}
+
 /* FOOTER 1 */
 .footer-1 {
   background-color: rgb(147, 130, 121);
