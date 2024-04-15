@@ -57,8 +57,9 @@
             color: #176ACA;
             }
 
-        .inicio-item-2:hover {
-            border: 1px solid #5C3E3E;      
+        &:hover{
+                border: 2.7px solid #5C3E3E;
+                border-radius:  7px;
             }
         }
 

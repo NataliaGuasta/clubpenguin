@@ -1,0 +1,40 @@
+/*MIXIN*/
+
+/*RESERVA*/
+
+$color-boton: #af9a9a;
+
+@mixin EstilosDeTexto($fuente, $size , $color){
+    font-family: $fuente;
+    font-size: $size;
+    color: $color;
+}
+@mixin MarginyCentrados($margin, $centrado){
+    margin-top: $margin;
+    text-align: $centrado;
+}
+
+.header-para-reserva {
+    background-color: white; 
+    box-shadow: none;
+    justify-content: center;
+    .Titulo-reserva {
+        @include MarginyCentrados(30px, center)
+    }
+}
+
+.card-reserva {
+    margin-bottom: 12%;
+    @include MarginyCentrados(60px, center);
+    .card-body {
+        display: inline-block;
+        .card-text {
+            display: block;
+        }
+        a {
+            background-color: $color-boton;
+            color: white;
+            border: $color-boton;
+        }
+    }
+}

@@ -22,30 +22,36 @@
                 text-align: center;
             }
 
-            .turismo p,
+            .turismo p {
+                @extend .horarios
+            }
             .horarios {
                 color: rgb(61, 87, 117);
                 text-align: center;
-                text-shadow: 0px 4px 27px black 
+                text-shadow: 0px 4px 27px black;
+                
+                &:hover {
+                    text-decoration: underline rgb(23, 106, 202);
+                } 
             }
         }
     }
-    .horarios:hover {
-        text-decoration: underline rgb(23, 106, 202);
+
+    .one-t{
+        &:hover {
+        border: 2px solid rgb(23, 106, 202);  
+        }
+    }
+        
+    .two-t{
+        @extend .one-t;
+    }
+        
+    .three-t{
+        @extend .one-t;
     }
 }
 
-.one-t:hover {
-    border: 2px solid rgb(23, 106, 202);  
-}
-    
-.two-t:hover {
-    border: 2px solid rgb(23, 106, 202);
-}
-    
-.three-t:hover {
-    border: 2px solid rgb(23, 106, 202);
-}
 
 .video-yt {
     width: 100%; 

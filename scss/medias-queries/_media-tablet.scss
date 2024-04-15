@@ -48,6 +48,7 @@
             display: inline-block;
             justify-content: space-between;
             margin: 2%;
+            border-radius: 5px;
     
             .menu-cards-items {
                 .img-menu {
@@ -77,10 +78,10 @@
                     }
                 }
             }
-        }
-        .menu-cards-items:hover{
-            border: 2.7px solid #5C3E3E;
-            border-radius:  7px;
+            &:hover{
+                border: 2.7px solid #5C3E3E;
+                border-radius:  7px;
+            }
         }
     }
 }

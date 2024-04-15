@@ -10,6 +10,7 @@
 @import './layout/salas';
 @import './layout/turismo';
 @import './layout/nosotros';
+@import './layout/masinfo';
 
 // footers
 @import './layout/footers';
@@ -18,3 +19,6 @@
 @import './medias-queries/media-mobile';
 @import './medias-queries/media-tablet';
 @import './medias-queries/media-desktop';
+
+// utilities 
+@import './utilities/mixins';

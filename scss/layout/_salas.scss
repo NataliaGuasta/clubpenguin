@@ -16,8 +16,12 @@
     font-family: "Raleway", sans-serif;
     box-shadow: 0 8px 20px #222;
 
-    .sala-romance, 
-    .sala-amigos, 
+    .sala-romance {
+        @extend .sala-familia;
+    } 
+    .sala-amigos {
+        @extend .sala-familia;
+    } 
     .sala-familia {
     display: grid;
     grid-template-columns: repeat(9, 1fr);
@@ -61,20 +65,25 @@
         grid-row: 1/4;
         font-size: 17px;
 
-        .Nombre-s,
-        .Apellido-s,
-        .Telefono-s,
+        .Nombre-s {
+            @extend .Cantidad-s;
+        }
+        .Apellido-s {
+            @extend .Cantidad-s;
+        }
+        .Telefono-s {
+            @extend .Cantidad-s;
+        }
         .Cantidad-s {
             margin: 15px;
             border-radius: 5px;
             color: brown;
             justify-content: center;
-        }
     }
 }
-
-.salas-container:hover {
-    border: 1px solid #5C3E3E;
+    &:hover {
+        border: 1px solid #5C3E3E;
+    }
 }
 
 .sala-items {
@@ -83,11 +92,18 @@
     text-align: right;
     margin-right: 19%;
 
-    .sala-item-1,
+    .sala-item-1 {
+        @extend .sala-item-2
+    }
     .sala-item-2 {
         display: inline-block;
         margin-bottom: 1%;
         margin-left: 2%;
+
+        .boton-reserva{
+            text-decoration: none;
+            color: #6A3932;
+        }
     }
 }
 

@@ -99,8 +99,9 @@ header nav ul li a:hover {
   text-decoration: none;
   color: #176ACA;
 }
-.inicio-container .inicio-item-2 .inicio-item-2:hover {
-  border: 1px solid #5C3E3E;
+.inicio-container .inicio-item-2:hover {
+  border: 2.7px solid #5C3E3E;
+  border-radius: 7px;
 }
 .inicio-container .mapa {
   width: 100%;
@@ -136,6 +137,10 @@ header nav ul li a:hover {
   box-shadow: 0 6px 9px #222;
   justify-content: center;
 }
+.menu-container .food-list .food-item:hover {
+  border: 2.7px solid #5C3E3E;
+  border-radius: 7px;
+}
 .menu-container .food-list .food-item img {
   display: flex;
   width: 160px;
@@ -153,9 +158,6 @@ header nav ul li a:hover {
 .menu-container .food-list .food-item .precio {
   font-size: 29px;
   padding: 30px;
-}
-.menu-container .food-list .food-item:hover {
-  border: 2.7px solid #5C3E3E;
 }
 
 .menu-cards {
@@ -179,9 +181,7 @@ header nav ul li a:hover {
   font-family: "Raleway", sans-serif;
   box-shadow: 0 8px 20px #222;
 }
-.salas-container .sala-romance,
-.salas-container .sala-amigos,
-.salas-container .sala-familia {
+.salas-container .sala-familia, .salas-container .sala-romance, .salas-container .sala-amigos {
   display: grid;
   grid-template-columns: repeat(9, 1fr);
   grid-template-rows: repeat(3, 100px);
@@ -220,16 +220,12 @@ header nav ul li a:hover {
   grid-row: 1/4;
   font-size: 17px;
 }
-.salas-container form .Nombre-s,
-.salas-container form .Apellido-s,
-.salas-container form .Telefono-s,
-.salas-container form .Cantidad-s {
+.salas-container form .Cantidad-s, .salas-container form .Nombre-s, .salas-container form .Apellido-s, .salas-container form .Telefono-s {
   margin: 15px;
   border-radius: 5px;
   color: brown;
   justify-content: center;
 }
-
 .salas-container:hover {
   border: 1px solid #5C3E3E;
 }
@@ -240,11 +236,14 @@ header nav ul li a:hover {
   text-align: right;
   margin-right: 19%;
 }
-.sala-items .sala-item-1,
-.sala-items .sala-item-2 {
+.sala-items .sala-item-2, .sala-items .sala-item-1 {
   display: inline-block;
   margin-bottom: 1%;
   margin-left: 2%;
+}
+.sala-items .sala-item-2 .boton-reserva, .sala-items .sala-item-1 .boton-reserva {
+  text-decoration: none;
+  color: #6A3932;
 }
 
 /* MAIN TURISMO */
@@ -266,28 +265,17 @@ header nav ul li a:hover {
   font-size: 2rem;
   text-align: center;
 }
-.turismo-conteiner .turismo .card-body .turismo p,
-.turismo-conteiner .turismo .card-body .horarios {
+.turismo-conteiner .turismo .card-body .horarios, .turismo-conteiner .turismo .card-body .turismo p {
   color: rgb(61, 87, 117);
   text-align: center;
   text-shadow: 0px 4px 27px black;
 }
-.turismo-conteiner .horarios:hover {
+.turismo-conteiner .turismo .card-body .horarios:hover, .turismo-conteiner .turismo .card-body .turismo p:hover {
   text-decoration: underline rgb(23, 106, 202);
 }
-
-.one-t:hover {
+.turismo-conteiner .one-t:hover, .turismo-conteiner .three-t:hover, .turismo-conteiner .two-t:hover {
   border: 2px solid rgb(23, 106, 202);
 }
-
-.two-t:hover {
-  border: 2px solid rgb(23, 106, 202);
-}
-
-.three-t:hover {
-  border: 2px solid rgb(23, 106, 202);
-}
-
 .video-yt {
   width: 100%;
   max-width: 560px;
@@ -314,18 +302,31 @@ main .nosotros {
   text-align: center;
   text-shadow: 0px 5px 15px black;
 }
-main .nosotros .parrafo-one {
-  margin: 60px;
+main .nosotros .parrafo-one, main .nosotros .parrafo-three {
+  margin: 5% 25% 5% 25%;
 }
 main .nosotros .parrafo-two {
-  margin: 60px;
+  margin: 5% 25% 5% 25%;
 }
 main .nosotros .parrafo-two span {
   color: #176ACA;
   font-weight: 700;
 }
-main .nosotros .parrafo-three {
-  margin: 75px;
+main .boton {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5%;
+}
+main .boton .boton-info {
+  background-color: #222;
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+  padding: 1rem;
+  font-family: "Raleway", sans-serif;
+}
+main .boton .boton-info:hover {
+  background-color: #413c3c;
 }
 main .redes {
   display: flex;
@@ -354,6 +355,87 @@ main .fotos-p img {
   box-shadow: 0 0 7px #222;
 }
 
+/*MAS INFORMACION*/
+main .eslogan, main .opiniones {
+  display: flex;
+  justify-content: center;
+  margin: 3rem;
+  align-items: center;
+}
+main .eslogan .eslogan-titulo, main .opiniones .eslogan-titulo {
+  font-family: "Raleway", sans-serif;
+  font-style: italic;
+  font-size: 3rem;
+  font-weight: 200;
+  color: black;
+}
+main .eslogan .img-eslogan, main .opiniones .img-eslogan {
+  width: 10%;
+  height: 10%;
+}
+main .tarjetas {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+main .tarjetas .tarjeta-noche, main .tarjetas .trajeta-pagos, main .tarjetas .tarjeta-restaurant {
+  margin: 3%;
+  width: 25rem;
+  height: 29rem;
+  box-shadow: 0 0 5px #222;
+}
+main .tarjetas .tarjeta-noche .card-img-top, main .tarjetas .trajeta-pagos .card-img-top, main .tarjetas .tarjeta-restaurant .card-img-top {
+  width: 100%;
+  height: 10rem;
+}
+main .tarjetas .tarjeta-noche .card-body .card-title, main .tarjetas .trajeta-pagos .card-body .card-title, main .tarjetas .trajeta-pagos .card-body .card-text, main .tarjetas .tarjeta-restaurant .card-body .card-title, main .tarjetas .tarjeta-noche .card-body .card-text, main .tarjetas .tarjeta-restaurant .card-body .card-text {
+  margin: 2%;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+}
+main .tarjetas .tarjeta-restaurant .card-img-top {
+  width: 100%;
+  height: 10rem;
+}
+main .tarjetas .tarjeta-restaurant .card-body .card-title, main .tarjetas .tarjeta-restaurant .card-body .card-text {
+  margin: 2%;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+}
+main .tarjetas .tarjeta-restaurant .card-body .boton-a-menu {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  color: #222;
+  border: 1px solid #222;
+}
+main .tarjetas .tarjeta-restaurant .card-body .boton-a-menu:hover {
+  background-color: #dbd7d7;
+}
+main .tarjetas .trajeta-pagos .card-img-top {
+  width: 100%;
+  height: 40rem;
+}
+main .tarjetas .trajeta-pagos .card-title, main .tarjetas .trajeta-pagos .card-text, main .tarjetas .tarjeta-noche .card-body .trajeta-pagos .card-text, main .tarjetas .tarjeta-restaurant .card-body .trajeta-pagos .card-text, main .tarjetas .trajeta-pagos .card-body .card-text {
+  margin: 6%;
+  padding: 2%;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+}
+main .opniones-parte-1, main .opiniones-parte-2 {
+  display: flex;
+  justify-content: center;
+  margin: 1%;
+  flex-wrap: wrap;
+}
+main .opniones-parte-1 .opinion-gente, main .opiniones-parte-2 .opinion-gente {
+  margin: 2%;
+  display: inline;
+  justify-content: center;
+}
+main .opniones-parte-1 .opinion-gente img, main .opiniones-parte-2 .opinion-gente img {
+  border-radius: 70px;
+}
 /* FOOTER 1 */
 .footer-1 {
   background-color: rgb(147, 130, 121);
@@ -394,9 +476,12 @@ main .fotos-p img {
 }
 
 /* FOOTER 2 */
+.footer-2 {
+  border-top: 1px solid gray;
+  margin-top: 5%;
+  align-items: end;
+}
 .footer-2 img {
-  display: flex;
-  justify-content: flex-end;
   width: 120px;
   height: 100px;
 }
@@ -416,6 +501,17 @@ main .fotos-p img {
 .footer-3 img {
   width: 120px;
   height: 100px;
+}
+
+/*FOOTER 4*/
+.footer-4 {
+  border-top: 1px solid gray;
+  text-align: center;
+  padding: 15px;
+}
+.footer-4 p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.3rem;
 }
 
 /* MEDIA QUERY | DISEÑO RESPONSIVE*/
@@ -482,6 +578,30 @@ main .fotos-p img {
     padding: 2%;
   }
 }
+/*MAS INFORMACION MEDIA-MOBILE*/
+@media only screen and (max-width: 767px) {
+  main .eslogan .eslogan-titulo, main .opiniones .eslogan-titulo {
+    font-size: 2rem;
+  }
+  main .eslogan .img-eslogan, main .opiniones .img-eslogan {
+    width: 25%;
+    height: 25%;
+  }
+  main .opniones-parte-1 .opinion-gente, main .opiniones-parte-2 .opinion-gente {
+    text-align: center;
+    margin: 1%;
+  }
+  main .opniones-parte-1 .opinion-gente img, main .opiniones-parte-2 .opinion-gente img {
+    width: auto;
+    height: 7rem;
+    margin: 3%;
+    align-items: center;
+    border-radius: 5%;
+  }
+  main .opniones-parte-1 .opinion-gente .card-body .card-title, main .opiniones-parte-2 .opinion-gente .card-body .card-title, main .opniones-parte-1 .opinion-gente .tarjetas .tarjeta-noche .card-body .card-text, main .tarjetas .tarjeta-noche .opniones-parte-1 .opinion-gente .card-body .card-text, main .opiniones-parte-2 .opinion-gente .tarjetas .tarjeta-noche .card-body .card-text, main .tarjetas .tarjeta-noche .opiniones-parte-2 .opinion-gente .card-body .card-text, main .opniones-parte-1 .opinion-gente .tarjetas .tarjeta-restaurant .card-body .card-text, main .tarjetas .tarjeta-restaurant .opniones-parte-1 .opinion-gente .card-body .card-text, main .opiniones-parte-2 .opinion-gente .tarjetas .tarjeta-restaurant .card-body .card-text, main .tarjetas .tarjeta-restaurant .opiniones-parte-2 .opinion-gente .card-body .card-text, main .opniones-parte-1 .opinion-gente .tarjetas .trajeta-pagos .card-body .card-text, main .tarjetas .trajeta-pagos .opniones-parte-1 .opinion-gente .card-body .card-text, main .opiniones-parte-2 .opinion-gente .tarjetas .trajeta-pagos .card-body .card-text, main .tarjetas .trajeta-pagos .opiniones-parte-2 .opinion-gente .card-body .card-text, main .opniones-parte-1 .opinion-gente .card-body .tarjetas .trajeta-pagos .card-text, main .opiniones-parte-2 .opinion-gente .card-body .tarjetas .trajeta-pagos .card-text {
+    font-size: 2rem;
+  }
+}
 /*TABLET*/
 /*INICIO MEDIA-TABLET*/
 @media only screen and (min-width: 501px) and (max-width: 768px) {
@@ -522,6 +642,7 @@ main .fotos-p img {
     display: inline-block;
     justify-content: space-between;
     margin: 2%;
+    border-radius: 5px;
   }
   .menu-cards .card .menu-cards-items .img-menu {
     display: flex;
@@ -537,7 +658,7 @@ main .fotos-p img {
     width: 100%;
     box-shadow: 0 0 7px #222;
   }
-  .menu-cards .card .menu-cards-items .card-body .card-title {
+  .menu-cards .card .menu-cards-items .card-body .card-title, .menu-cards .card .menu-cards-items main .tarjetas .tarjeta-noche .card-body .card-text, main .tarjetas .tarjeta-noche .menu-cards .card .menu-cards-items .card-body .card-text, .menu-cards .card .menu-cards-items main .tarjetas .tarjeta-restaurant .card-body .card-text, main .tarjetas .tarjeta-restaurant .menu-cards .card .menu-cards-items .card-body .card-text, .menu-cards .card .menu-cards-items main .tarjetas .trajeta-pagos .card-body .card-text, main .tarjetas .trajeta-pagos .menu-cards .card .menu-cards-items .card-body .card-text, .menu-cards .card .menu-cards-items .card-body main .tarjetas .trajeta-pagos .card-text {
     color: white;
     text-shadow: 0px 5px 15px black;
   }
@@ -546,7 +667,7 @@ main .fotos-p img {
     font-style: italic;
     text-shadow: 0px 5px 15px black;
   }
-  .menu-cards .menu-cards-items:hover {
+  .menu-cards .card:hover {
     border: 2.7px solid #5C3E3E;
     border-radius: 7px;
   }
@@ -582,25 +703,25 @@ main .fotos-p img {
 /*DESKTOP*/
 /* HEADER MEDIA-DESKTOP/PC */
 @media only screen and (min-width: 1500px) and (max-width: 1899px) {
-  header img .logo-cp {
+  header .logo-cp {
     margin-left: auto;
     margin-right: 10%;
   }
 }
 @media only screen and (min-width: 1900px) and (max-width: 2100px) {
-  header img .logo-cp {
+  header .logo-cp {
     margin-left: auto;
     margin-right: 15%;
   }
 }
 @media only screen and (min-width: 2101px) and (max-width: 2509px) {
-  header img .logo-cp {
+  header .logo-cp {
     margin-left: auto;
     margin-right: 20%;
   }
 }
 @media only screen and (min-width: 2510px) {
-  header img .logo-cp {
+  header .logo-cp {
     margin-left: auto;
     margin-right: 24%;
   }
@@ -614,6 +735,34 @@ main .fotos-p img {
     margin-right: 2.5%;
   }
 }
-/* SALAS MEDIA-DESKTOP/PC */
+/*NOSOTROS MEDIA-DESKTOP/PC*/
+/*MIXIN*/
+/*RESERVA*/
+.header-para-reserva {
+  background-color: white;
+  box-shadow: none;
+  justify-content: center;
+}
+.header-para-reserva .Titulo-reserva {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.card-reserva {
+  margin-bottom: 12%;
+  margin-top: 60px;
+  text-align: center;
+}
+.card-reserva .card-body {
+  display: inline-block;
+}
+.card-reserva .card-body .card-text {
+  display: block;
+}
+.card-reserva .card-body a {
+  background-color: #af9a9a;
+  color: white;
+  border: #af9a9a;
+}
 
 /*# sourceMappingURL=style.css.map */

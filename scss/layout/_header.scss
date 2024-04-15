@@ -2,11 +2,11 @@
 
 header {
     background-color: #FDF8F8;
-border-radius: 5px;
-display: flex;
-align-items: center;
-justify-content: flex-end;
-box-shadow: 0 0 8px #222;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    box-shadow: 0 0 8px #222;
     
     img {
         width: 160px;
@@ -40,11 +40,12 @@ box-shadow: 0 0 8px #222;
                     font-size: 18px;
                     font-weight: lighter;
                     transition: 0.5s;
-                    text-shadow: 0px 4px 25px black 
-                    }
-                    a:hover {
+                    text-shadow: 0px 4px 25px black; 
+
+                    &:hover {
                         font-size: 20px;
-                        }
+                    }
                 }
             }
+    }
 }

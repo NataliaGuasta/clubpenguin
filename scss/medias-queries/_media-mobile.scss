@@ -73,3 +73,46 @@
     }
     
 }
+
+/*MAS INFORMACION MEDIA-MOBILE*/
+@media only screen and (max-width: 767px){
+    main {
+        .eslogan {
+
+            .eslogan-titulo {
+                font-size: 2rem;
+            }
+    
+            .img-eslogan {
+                width: 25%;
+                height: 25%;
+            }
+        }
+            
+        .opniones-parte-1{
+                .opinion-gente {
+                    text-align: center;
+                    margin: 1%;
+                    img {
+                        width: auto;
+                        height: 7rem;
+                        margin: 3%;
+                        align-items: center;
+                        border-radius: 5%;
+                    }
+
+                    .card-body {
+                        .card-title{
+                            font-size: 2rem;
+                        }
+                    }
+                }
+            }
+        
+    
+            .opiniones-parte-2{
+                @extend .opniones-parte-1;
+            }  
+        }
+    
+}
