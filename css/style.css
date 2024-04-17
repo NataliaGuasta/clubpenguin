@@ -513,7 +513,7 @@ main .opniones-parte-1 .opinion-gente img, main .opiniones-parte-2 .opinion-gent
 }
 .footer-4 p {
   font-family: Arial;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   color: black;
 }
 
@@ -771,7 +771,6 @@ main .opniones-parte-1 .opinion-gente img, main .opiniones-parte-2 .opinion-gent
     margin-right: 30rem;
   }
 }
-/*NOSOTROS MEDIA-DESKTOP/PC*/
 /*MIXIN*/
 /*RESERVA*/
 .header-para-reserva {
