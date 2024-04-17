@@ -4,11 +4,6 @@
 
 $color-boton: #af9a9a;
 
-@mixin EstilosDeTexto($fuente, $size , $color){
-    font-family: $fuente;
-    font-size: $size;
-    color: $color;
-}
 @mixin MarginyCentrados($margin, $centrado){
     margin-top: $margin;
     text-align: $centrado;

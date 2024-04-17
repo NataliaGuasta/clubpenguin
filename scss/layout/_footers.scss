@@ -1,6 +1,15 @@
+/*MIXIN Y VARIABLE PARA LOS FOOTER*/
+@mixin EstilosDeTexto($fuente, $size , $color){
+    font-family: $fuente;
+    font-size: $size;
+    color: $color;
+}
+
+$Color-fondo-footer: rgb(175, 168, 163);
+
 /* FOOTER 1 */
 .footer-1 {
-    background-color: rgb(147, 130, 121);
+    background-color: $Color-fondo-footer;
     color: white;
     padding: 20px;
     display: flex;
@@ -58,7 +67,7 @@
 /*FOOTER 3*/
 
 .footer-3 {
-    background-color: rgb(147, 130  , 121);
+    background-color: $Color-fondo-footer;
     display: flex;
     justify-content: flex-end;
     box-shadow: 0 0 7px #222;
@@ -82,7 +91,6 @@
     text-align: center;
     padding: 15px;
     p{
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 1.3rem;
+        @include EstilosDeTexto(Arial, 11.3rem,black );
     }
 }
