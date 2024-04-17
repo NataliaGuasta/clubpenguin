@@ -91,6 +91,6 @@ $Color-fondo-footer: rgb(175, 168, 163);
     text-align: center;
     padding: 15px;
     p{
-        @include EstilosDeTexto(Arial, 11.3rem,black );
+        @include EstilosDeTexto(Arial, 1.3rem,black );
     }
 }

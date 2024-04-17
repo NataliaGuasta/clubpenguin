@@ -10,12 +10,13 @@ header {
   background-color: #FDF8F8;
   border-radius: 5px;
   display: flex;
-  align-items: center;
   justify-content: flex-end;
+  align-items: center;
   box-shadow: 0 0 8px #222;
 }
-header img {
-  width: 160px;
+header .logo-cp {
+  padding-right: 2%;
+  width: 179px;
   height: 140px;
 }
 header .navbar {
@@ -512,7 +513,7 @@ main .opniones-parte-1 .opinion-gente img, main .opiniones-parte-2 .opinion-gent
 }
 .footer-4 p {
   font-family: Arial;
-  font-size: 11.3rem;
+  font-size: 1.3rem;
   color: black;
 }
 
@@ -704,25 +705,28 @@ main .opniones-parte-1 .opinion-gente img, main .opiniones-parte-2 .opinion-gent
 @media only screen and (min-width: 1500px) and (max-width: 1899px) {
   header .logo-cp {
     margin-left: auto;
-    margin-right: 10%;
+    margin-right: 11%;
   }
 }
 @media only screen and (min-width: 1900px) and (max-width: 2100px) {
   header .logo-cp {
     margin-left: auto;
-    margin-right: 15%;
+    margin-right: 16%;
+    padding-right: 0%;
   }
 }
 @media only screen and (min-width: 2101px) and (max-width: 2509px) {
   header .logo-cp {
     margin-left: auto;
-    margin-right: 20%;
+    margin-right: 21%;
+    padding-right: 0%;
   }
 }
 @media only screen and (min-width: 2510px) {
   header .logo-cp {
     margin-left: auto;
     margin-right: 24%;
+    padding-right: 0%;
   }
 }
 /*MENU MEDIA-DESKTOP/PC*/

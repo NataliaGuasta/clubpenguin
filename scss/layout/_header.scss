@@ -4,12 +4,13 @@ header {
     background-color: #FDF8F8;
     border-radius: 5px;
     display: flex;
-    align-items: center;
     justify-content: flex-end;
+    align-items: center;
     box-shadow: 0 0 8px #222;
     
-    img {
-        width: 160px;
+    .logo-cp {
+        padding-right: 2%;
+        width: 179px;
         height: 140px;
     }
     
