@@ -12,6 +12,10 @@
     <!--CSS-->
 
     <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Link AOS -->
+
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -47,7 +51,7 @@
 
     <!-- Sala de Romance -->
     <section class="salas-container">
-        <div class="sala-romance">
+        <div class="sala-romance" data-aos="flip-left">
             <img src="../img/sala-romance.jpg" alt="Pareja de pingüinos" class="img-salas">
             <h2 id="Parejas">Sala Romance</h2>
             <p>Te invitamos a una cena romántica con tu pareja en nuestra sala privada.</p>
@@ -91,7 +95,7 @@
 
     <!-- Sala de Amigos -->
     <section class="salas-container">
-        <div class="sala-amigos ">
+        <div class="sala-amigos " data-aos="flip-left">
             <img src="../img/sala-amigos.jpg" alt="Pinguinos en un bar" class="img-salas">
             <h2 id="Amigos">Sala Amigos</h2>
             <p>Reserva la sala privada para vos y hasta 9 amigos y de regalo les ofrecemos 5 consumiciones y un champagne.</p>
@@ -143,7 +147,7 @@
 
     <!-- Sala Familiar -->
     <section class="salas-container">
-        <div class="sala-familia">
+        <div class="sala-familia" data-aos="flip-left">
             <img src="../img/sala-familias.jpg" alt="Familia de pingüinos" class="img-salas">
             <h2 id="Familias">Sala Familia</h2>
             <p>Una sala donde vos y tu familia van a poder disfrutar de forma privada de nuestro parador. Ideal para ir con niños ya que cuenta con rompecabezas y más juegos de mesas para jugar en familia.</p>
@@ -202,5 +206,12 @@
     <!-- BOOTSTRAP JS-->
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+<!-- AOS JS -->
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>

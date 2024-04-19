@@ -71,6 +71,7 @@ header nav ul li a:hover {
 .inicio-container .carousel .carousel-container .custom-image-size {
   max-width: 100%;
   height: auto;
+  border-radius: 5px;
 }
 .inicio-container .carousel .carousel-container .carousel-item img {
   width: 100%;
@@ -248,16 +249,25 @@ header nav ul li a:hover {
 }
 
 /* MAIN TURISMO */
+.turismo-conteiner {
+  flex-wrap: wrap;
+  display: flex;
+}
 .turismo-conteiner .turismo {
   background-color: rgb(192, 191, 191);
   font-family: "Raleway", sans-serif;
   border-radius: 7px;
+  width: 20rem;
+  height: 35rem;
+  margin: 4%;
 }
 .turismo-conteiner .turismo .img-turismo {
   width: 100%;
   margin-right: 2rem;
   display: block;
   margin: auto;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #222;
 }
 .turismo-conteiner .turismo .card-body .turismo-titulo {
   color: rgb(23, 106, 202);
@@ -266,12 +276,17 @@ header nav ul li a:hover {
   font-size: 2rem;
   text-align: center;
 }
-.turismo-conteiner .turismo .card-body .horarios, .turismo-conteiner .turismo .card-body .turismo p {
+.turismo-conteiner .turismo .card-body .card-text {
+  color: rgb(39, 59, 82);
+  text-align: center;
+  text-shadow: 0px 4px 27px #222;
+}
+.turismo-conteiner .turismo .card-body .horarios {
   color: rgb(61, 87, 117);
   text-align: center;
   text-shadow: 0px 4px 27px black;
 }
-.turismo-conteiner .turismo .card-body .horarios:hover, .turismo-conteiner .turismo .card-body .turismo p:hover {
+.turismo-conteiner .turismo .card-body .horarios:hover {
   text-decoration: underline rgb(23, 106, 202);
 }
 .turismo-conteiner .one-t:hover, .turismo-conteiner .three-t:hover, .turismo-conteiner .two-t:hover {
@@ -301,13 +316,13 @@ main .nosotros {
   color: black;
   font-size: 20px;
   text-align: center;
-  text-shadow: 0px 5px 15px black;
+  text-shadow: 0px 0px 39px #222;
 }
 main .nosotros .parrafo-one, main .nosotros .parrafo-three {
-  margin: 5% 25% 5% 25%;
+  margin: 5% 15% 5% 15%;
 }
 main .nosotros .parrafo-two {
-  margin: 5% 25% 5% 25%;
+  margin: 5% 15% 5% 15%;
 }
 main .nosotros .parrafo-two span {
   color: #176ACA;
@@ -339,6 +354,10 @@ main .redes img {
   display: flex;
   justify-content: center;
   box-shadow: none;
+  transition: 1s;
+}
+main .redes img:hover {
+  transform: rotate(360deg);
 }
 main .fotos-p {
   display: flex;
@@ -394,6 +413,9 @@ main .tarjetas .tarjeta-noche .card-body .card-title, main .tarjetas .trajeta-pa
   text-align: center;
   font-family: "Raleway", sans-serif;
 }
+main .tarjetas .tarjeta-restaurant {
+  width: 18rem;
+}
 main .tarjetas .tarjeta-restaurant .card-img-top {
   width: 100%;
   height: 10rem;
@@ -423,6 +445,23 @@ main .tarjetas .trajeta-pagos .card-title, main .tarjetas .trajeta-pagos .card-t
   text-align: center;
   font-family: "Raleway", sans-serif;
 }
+@keyframes Aparecer {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 main .opniones-parte-1, main .opiniones-parte-2 {
   display: flex;
   justify-content: center;
@@ -431,8 +470,12 @@ main .opniones-parte-1, main .opiniones-parte-2 {
 }
 main .opniones-parte-1 .opinion-gente, main .opiniones-parte-2 .opinion-gente {
   margin: 2%;
-  display: inline;
   justify-content: center;
+  animation-name: Aparecer;
+  animation-iteration-count: initial;
+  animation-timing-function: linear;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
 }
 main .opniones-parte-1 .opinion-gente img, main .opiniones-parte-2 .opinion-gente img {
   border-radius: 70px;
@@ -643,6 +686,7 @@ main .opniones-parte-1 .opinion-gente img, main .opiniones-parte-2 .opinion-gent
     justify-content: space-between;
     margin: 2%;
     border-radius: 5px;
+    max-width: 540px;
   }
   .menu-cards .card .menu-cards-items .img-menu {
     display: flex;

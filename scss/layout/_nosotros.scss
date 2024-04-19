@@ -6,14 +6,14 @@ main {
         color: black;
         font-size: 20px;
         text-align: center;
-        text-shadow: 0px 5px 15px black; 
+        text-shadow: 0px 0px 39px #222; 
 
         .parrafo-one {
-            margin: 5% 25% 5% 25%;  
+            margin: 5% 15% 5% 15%;  
         }
     
         .parrafo-two {
-            margin: 5% 25% 5% 25%;
+            margin: 5% 15% 5% 15%;
             span {color: #176ACA;
                 font-weight: 700;}}
 
@@ -48,6 +48,10 @@ main {
             display: flex;
             justify-content: center;
             box-shadow: none;
+            transition: 1s;
+            &:hover {
+                transform: rotate(360deg);
+            }
         }
     }
 

@@ -1,16 +1,23 @@
 /* MAIN TURISMO */
 
 .turismo-conteiner {
+    flex-wrap: wrap;
+    display: flex;
     .turismo {
         background-color: rgb(192, 191, 191);
         font-family: "Raleway", sans-serif;
         border-radius: 7px;
+        width: 20rem;
+        height: 35rem;
+        margin: 4%;
 
         .img-turismo {
             width: 100%;
             margin-right: 2rem;
             display: block;
             margin: auto;
+            border-radius: 5px;
+            box-shadow: 0 0 5px #222;
         }
 
         .card-body {
@@ -22,9 +29,12 @@
                 text-align: center;
             }
 
-            .turismo p {
-                @extend .horarios
+            .card-text {
+                color: rgb(39, 59, 82);
+                text-align: center;
+                text-shadow: 0px 4px 27px #222;
             }
+
             .horarios {
                 color: rgb(61, 87, 117);
                 text-align: center;
