@@ -103,7 +103,7 @@ main {
 
     // KEYFRAME
 
-    @keyframes Aparecer {
+    @keyframes Aparecer-masinfo {
         0% {
             opacity: 0;
         }
@@ -139,7 +139,7 @@ main {
             margin: 2%;
             max-width: 35rem;
             height: 17rem auto;
-            animation-name: Aparecer;
+            animation-name: Aparecer-masinfo;
             animation-iteration-count: initial;
             animation-timing-function: linear;
             animation-duration: 1s;

@@ -1,5 +1,27 @@
 /* MAIN TURISMO */
 
+@keyframes Aparecer {
+    0% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 0.25;
+    }
+
+    50% {
+        opacity: 0.50;
+    }
+    
+    75% {
+        opacity: 0.75;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
 .turismo-conteiner {
     flex-wrap: wrap;
     display: flex;
@@ -10,6 +32,11 @@
         width: 20rem;
         height: 35rem;
         margin: 4%;
+        animation-name: Aparecer;
+        animation-iteration-count: initial;
+        animation-timing-function: linear;
+        animation-duration: 1s;
+        animation-delay: 0;
 
         .img-turismo {
             width: 100%;
@@ -24,7 +51,7 @@
             .turismo-titulo {
                 color: rgb(23, 106, 202);
                 font-family: "Raleway", sans-serif;
-                text-shadow: 0px 4px 25px black;
+                text-shadow: 0px 0px 35px black;
                 font-size: 2rem;
                 text-align: center;
             }
@@ -32,7 +59,7 @@
             .card-text {
                 color: rgb(39, 59, 82);
                 text-align: center;
-                text-shadow: 0px 4px 27px #222;
+                text-shadow: 0px 0px 40px #222;
             }
 
             .horarios {

@@ -249,6 +249,23 @@ header nav ul li a:hover {
 }
 
 /* MAIN TURISMO */
+@keyframes Aparecer {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .turismo-conteiner {
   flex-wrap: wrap;
   display: flex;
@@ -260,6 +277,11 @@ header nav ul li a:hover {
   width: 20rem;
   height: 35rem;
   margin: 4%;
+  animation-name: Aparecer;
+  animation-iteration-count: initial;
+  animation-timing-function: linear;
+  animation-duration: 1s;
+  animation-delay: 0;
 }
 .turismo-conteiner .turismo .img-turismo {
   width: 100%;
@@ -272,14 +294,14 @@ header nav ul li a:hover {
 .turismo-conteiner .turismo .card-body .turismo-titulo {
   color: rgb(23, 106, 202);
   font-family: "Raleway", sans-serif;
-  text-shadow: 0px 4px 25px black;
+  text-shadow: 0px 0px 35px black;
   font-size: 2rem;
   text-align: center;
 }
 .turismo-conteiner .turismo .card-body .card-text {
   color: rgb(39, 59, 82);
   text-align: center;
-  text-shadow: 0px 4px 27px #222;
+  text-shadow: 0px 0px 40px #222;
 }
 .turismo-conteiner .turismo .card-body .horarios {
   color: rgb(61, 87, 117);
@@ -445,7 +467,7 @@ main .tarjetas .trajeta-pagos .card-title, main .tarjetas .trajeta-pagos .card-t
   text-align: center;
   font-family: "Raleway", sans-serif;
 }
-@keyframes Aparecer {
+@keyframes Aparecer-masinfo {
   0% {
     opacity: 0;
   }
@@ -472,7 +494,7 @@ main .opniones-parte-1 .opinion-gente, main .opiniones-parte-2 .opinion-gente {
   margin: 2%;
   max-width: 35rem;
   height: 17rem auto;
-  animation-name: Aparecer;
+  animation-name: Aparecer-masinfo;
   animation-iteration-count: initial;
   animation-timing-function: linear;
   animation-duration: 1s;
