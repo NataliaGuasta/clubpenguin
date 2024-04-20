@@ -27,7 +27,7 @@ main {
         .tarjeta-noche {
             margin: 3%;
             width: 25rem;
-            height: 29rem;
+            height: 29rem auto;
             box-shadow: 0 0 5px #222;
             .card-img-top {
                 width: 100%;
@@ -137,7 +137,8 @@ main {
         flex-wrap: wrap;
         .opinion-gente {
             margin: 2%;
-            justify-content: center;
+            max-width: 35rem;
+            height: 17rem auto;
             animation-name: Aparecer;
             animation-iteration-count: initial;
             animation-timing-function: linear;
@@ -145,6 +146,7 @@ main {
             animation-delay: 0.5s;
             img {
                 border-radius: 70px;
+                max-width: 100%;
             }
         }
 

@@ -401,7 +401,7 @@ main .tarjetas {
 main .tarjetas .tarjeta-noche, main .tarjetas .trajeta-pagos, main .tarjetas .tarjeta-restaurant {
   margin: 3%;
   width: 25rem;
-  height: 29rem;
+  height: 29rem auto;
   box-shadow: 0 0 5px #222;
 }
 main .tarjetas .tarjeta-noche .card-img-top, main .tarjetas .trajeta-pagos .card-img-top, main .tarjetas .tarjeta-restaurant .card-img-top {
@@ -470,7 +470,8 @@ main .opniones-parte-1, main .opiniones-parte-2 {
 }
 main .opniones-parte-1 .opinion-gente, main .opiniones-parte-2 .opinion-gente {
   margin: 2%;
-  justify-content: center;
+  max-width: 35rem;
+  height: 17rem auto;
   animation-name: Aparecer;
   animation-iteration-count: initial;
   animation-timing-function: linear;
@@ -479,6 +480,7 @@ main .opniones-parte-1 .opinion-gente, main .opiniones-parte-2 .opinion-gente {
 }
 main .opniones-parte-1 .opinion-gente img, main .opiniones-parte-2 .opinion-gente img {
   border-radius: 70px;
+  max-width: 100%;
 }
 /*MIXIN Y VARIABLE PARA LOS FOOTER*/
 /* FOOTER 1 */
